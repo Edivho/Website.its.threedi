@@ -355,7 +355,7 @@ export default function App() {
             {/* Image Container with elegant borders/shadows */}
             <div className="relative z-10 rounded-2xl overflow-hidden aspect-[3/4] shadow-2xl border-4 border-white/60">
               <img 
-                src="/src/assets/images/hero_fashion_portrait_1782335016649.jpg" 
+                src="/src/assets/images/hero_fashion_portrait_1782335016649.png" 
                 alt="Its.Threedi Fashion Premium Thrift Editorial" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-[1.5s]"
                 referrerPolicy="no-referrer"
@@ -559,7 +559,7 @@ export default function App() {
           {/* Right Image Display */}
           <div className="lg:col-span-5 relative min-h-[300px] lg:min-h-full">
             <img 
-              src="/src/assets/images/thrift_store_aesthetic_1782335033320.jpg" 
+              src="/src/assets/images/thrift_store_aesthetic_1782335033320.png" 
               alt="Thrift clothes hanger closeup" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
