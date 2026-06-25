@@ -4,10 +4,8 @@
 >
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center w-full">
         
-        <!-- Left Side content -->
         <div class="lg:col-span-7 flex flex-col justify-center text-left">
             
-            <!-- Tagline Badge -->
             <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 self-start text-primary font-medium text-xs tracking-wider uppercase">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
@@ -15,21 +13,17 @@
                 Thrift Store & Business Partner
             </div>
 
-            <!-- Heading & Tagline -->
             <h1 class="font-serif text-5xl md:text-7xl font-bold text-dark leading-[1.05] mb-6 tracking-tight">
                 Seni Berpakaian, <br />
                 <span class="text-primary italic font-medium font-serif">Menghargai Masa Lalu.</span>
             </h1>
 
-            <!-- Short description -->
             <p class="text-lg md:text-xl text-dark/80 max-w-xl mb-10 leading-relaxed font-light">
                 Temukan outfit thrift pilihan kelas dunia dan mulailah membangun bisnis thrift mandiri Anda sendiri bersama <span class="font-semibold text-primary">Its.Threedi</span>. Premium, terkurasi, dan berkelanjutan.
             </p>
 
-            <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 
-                <!-- Live TikTok Button -->
                 <button 
                     @click="$dispatch('open-live-modal')"
                     class="flex-1 sm:flex-none flex items-center justify-center gap-3 px-8 py-4 bg-primary text-brand-bg rounded-lg font-medium text-sm tracking-wider uppercase shadow-md hover:bg-dark hover:-translate-y-0.5 transition-all active:translate-y-0"
@@ -40,7 +34,6 @@
                     Live di TikTok
                 </button>
 
-                <!-- Instagram Button -->
                 <a 
                     href="https://instagram.com/its.threedi" 
                     target="_blank" 
@@ -54,7 +47,6 @@
                     Instagram
                 </a>
 
-                <!-- Lokasi Toko Button -->
                 <button 
                     @click="$dispatch('open-maps-modal')"
                     class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-b-2 border-primary/40 hover:border-primary text-dark font-medium text-sm tracking-wider uppercase transition-colors"
@@ -69,20 +61,17 @@
             </div>
         </div>
 
-        <!-- Right Side: Lifestyle fashion image -->
         <div class="lg:col-span-5 relative">
             
-            <!-- Image Frame -->
             <div class="relative z-10 rounded-2xl overflow-hidden aspect-[3/4] shadow-2xl border-4 border-white/60">
                 <img 
-                    src="{{ asset('src/assets/images/hero_fashion_portrait_1782335016649.jpg') }}" 
+                    src="{{ asset('hero_fashion_portrait_1782335016649.png') }}" 
                     alt="Its.Threedi Editorial portrait" 
                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-[1.5s]"
                     referrerpolicy="no-referrer"
                 />
             </div>
 
-            <!-- Background Accents -->
             <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-accent/20 rounded-full filter blur-xl -z-10"></div>
             <div class="absolute -top-6 -right-6 w-48 h-48 bg-primary/5 rounded-full filter blur-2xl -z-10"></div>
             
@@ -95,6 +84,5 @@
             </div>
 
         </div>
-
     </div>
 </section>
