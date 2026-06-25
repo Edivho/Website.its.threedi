@@ -77,7 +77,7 @@
 
         <div class="lg:col-span-5 relative min-h-[300px] lg:min-h-full">
             <img 
-                src="{{ asset('src/assets/images/thrift_store_aesthetic_1782335033320.jpg') }}" 
+                src="{{ asset('src/assets/images/thrift_store_aesthetic_1782335033320.png') }}" 
                 alt="Thrift clothes hanger mockup" 
                 class="w-full h-full object-cover"
                 referrerpolicy="no-referrer"

@@ -3,11 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useEffect, FormEvent } from "react";
 import { 
   ArrowRight, 
@@ -120,7 +115,7 @@ export default function App() {
 
   // Helper to open direct maps
   const openDirectMaps = () => {
-    window.open("https://maps.google.com/?q=Jl.+Guru+Muhyin+RT04/02+No.73+Lenteng+Agung+Jagakarsa+Jakarta+Selatan", "_blank");
+    window.open("https://maps.google.com", "_blank");
   };
 
   // Custom Smooth Scroll helper
@@ -304,7 +299,7 @@ export default function App() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg md:text-xl text-dark/80 max-w-xl mb-10 leading-relaxed font-light"
             >
-              Temukan outfit thrift yang branded tetapi masi terjangkau dan mulus. mulailah membangun usaha thrift bersama kami  <span className="font-semibold text-primary">Its.Threedi</span>. Premium, pilihan, dan berkelanjutan.
+              Temukan outfit thrift yang branded tetapi masi terjangkau dan mulus. mulailah membangun usaha thrift bersama kami <span className="font-semibold text-primary">Its.Threedi</span>. Premium, pilihan, dan berkelanjutan.
             </motion.p>
 
             {/* CTA Buttons Grid */}
@@ -345,24 +340,22 @@ export default function App() {
             </motion.div>
           </div>
 
-          {/* Right Column Large Image */}
+          {/* Right Column Large Image (PATH PERBAIKAN PRODUCTION) */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             className="lg:col-span-5 relative"
           >
-            {/* Image Container with elegant borders/shadows */}
             <div className="relative z-10 rounded-2xl overflow-hidden aspect-[3/4] shadow-2xl border-4 border-white/60">
               <img 
-                src="/src/assets/images/hero_fashion_portrait_1782335016649.png" 
+                src="/hero_fashion_portrait_1782335016649.png" 
                 alt="Its.Threedi Fashion Premium Thrift Editorial" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-[1.5s]"
                 referrerPolicy="no-referrer"
               />
             </div>
             
-            {/* Visual background accents mimicking luxury brands (Aesop/Apple style) */}
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent/20 rounded-full filter blur-xl -z-10"></div>
             <div className="absolute -top-6 -right-6 w-48 h-48 bg-primary/5 rounded-full filter blur-2xl -z-10"></div>
             
@@ -401,7 +394,7 @@ export default function App() {
               </p>
               
               <p className="text-dark/70 font-light text-sm md:text-base leading-relaxed">
-                Lebih dari sekadar store retail, kami adalah mitra strategis Anda untuk merintis bisnis thrifting yang menguntungkan. Melalui paket usaha terstruktur, x dan pasokan suplai tangan pertama, kami membantu puluhan pengusaha baru memulai kesuksesan finansial mereka.
+                Atas dasar kenyamanan mitra bisnis, kami menyediakan paket usaha terstruktur dan pasokan suplai langsung dari tangan pertama, guna membantu kelancaran finansial para pengusaha baru di bidang thrift fashion.
               </p>
 
               <div className="pt-4 flex flex-wrap gap-x-8 gap-y-3">
@@ -461,21 +454,18 @@ export default function App() {
 
           {/* Statistic Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 pt-16 border-t border-accent/20">
-            {/* Stat 1 */}
             <div className="bg-brand-bg p-8 rounded-xl border border-accent/30 text-center hover:shadow-md transition-shadow group">
               <p className="text-primary font-bold text-sm uppercase tracking-wider mb-2">Produk Terjual</p>
               <h3 className="text-4xl md:text-5xl font-serif font-semibold text-dark mb-2 group-hover:text-primary transition-colors">10,000+</h3>
               <p className="text-xs text-dark/70">Pakaian thrift premium terkirim ke seluruh pelosok tanah air.</p>
             </div>
 
-            {/* Stat 2 */}
             <div className="bg-brand-bg p-8 rounded-xl border border-accent/30 text-center hover:shadow-md transition-shadow group">
               <p className="text-primary font-bold text-sm uppercase tracking-wider mb-2">Tiktok Followers</p>
               <h3 className="text-4xl md:text-5xl font-serif font-semibold text-dark mb-2 group-hover:text-primary transition-colors">112,000+</h3>
               <p className="text-xs text-dark/70">Pengikut aktif dan loyal yang menyukai fesyen berkelanjutan.</p>
             </div>
 
-            {/* Stat 3 */}
             <div className="bg-brand-bg p-8 rounded-xl border border-accent/30 text-center hover:shadow-md transition-shadow group">
               <p className="text-primary font-bold text-sm uppercase tracking-wider mb-2">Tiktok Likes</p>
               <h3 className="text-4xl md:text-5xl font-serif font-semibold text-dark mb-2 group-hover:text-primary transition-colors">28,700+</h3>
@@ -486,7 +476,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- SECTION 3 — LIVE TIKTOK (Highlight) --- */}
+      {/* --- SECTION 3 — LIVE TIKTOK (Highlight & PATH PERBAIKAN PRODUCTION) --- */}
       <section 
         id="live-section"
         className="py-24 max-w-7xl mx-auto px-6 md:px-12"
@@ -496,7 +486,6 @@ export default function App() {
           {/* Left Text / Guide */}
           <div className="lg:col-span-7 p-8 md:p-16 flex flex-col justify-between">
             <div className="space-y-6">
-              
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs font-semibold tracking-widest uppercase">
                 <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
                 Siaran Langsung Interaktif
@@ -507,13 +496,11 @@ export default function App() {
               </h2>
               
               <p className="text-brand-bg/85 font-light text-base md:text-lg leading-relaxed max-w-xl">
-                Nikmati kemudahan melihat bahan, ukuran, dan detail kecocokan produk fesyen pilihan kami secara langsung melalui siaran interaktif harian di TikTok Live.
+                Nikmati kemudahan melihat bahan, ukuran, dan detail kecocokan produk fesyen pilihan kami secara langsung melalui siaran harian di TikTok Live.
               </p>
 
               {/* 3 Steps */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6">
-                
-                {/* Step 1 */}
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors">
                   <div className="w-7 h-7 rounded-full bg-accent text-dark font-bold text-xs flex items-center justify-center mb-3">
                     01
@@ -522,7 +509,6 @@ export default function App() {
                   <p className="text-xs text-brand-bg/75">Masuk ke live room kami setiap sore pukul 16.00 WIB.</p>
                 </div>
 
-                {/* Step 2 */}
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors">
                   <div className="w-7 h-7 rounded-full bg-accent text-dark font-bold text-xs flex items-center justify-center mb-3">
                     02
@@ -531,7 +517,6 @@ export default function App() {
                   <p className="text-xs text-brand-bg/75">Ketik "SAYA" diikuti kode pakaian yang sedang ditunjukkan host.</p>
                 </div>
 
-                {/* Step 3 */}
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors">
                   <div className="w-7 h-7 rounded-full bg-accent text-dark font-bold text-xs flex items-center justify-center mb-3">
                     03
@@ -539,11 +524,9 @@ export default function App() {
                   <h4 className="font-bold text-sm mb-1">Admin Checkout</h4>
                   <p className="text-xs text-brand-bg/75">Kirim tangkapan layar klaim Anda ke admin WhatsApp kami.</p>
                 </div>
-
               </div>
             </div>
 
-            {/* Large CTA */}
             <div className="pt-10">
               <button 
                 onClick={() => setShowLiveModal(true)}
@@ -553,21 +536,18 @@ export default function App() {
                 Tonton Live Sekarang
               </button>
             </div>
-
           </div>
 
           {/* Right Image Display */}
           <div className="lg:col-span-5 relative min-h-[300px] lg:min-h-full">
             <img 
-              src="/src/assets/images/thrift_store_aesthetic_1782335033320.png" 
+              src="/thrift_store_aesthetic_1782335033320.png" 
               alt="Thrift clothes hanger closeup" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
-            {/* Dark gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-primary to-transparent opacity-80 lg:opacity-40"></div>
             
-            {/* Visual Stream Card Floating */}
             <div className="absolute bottom-6 left-6 right-6 bg-[#541A1A]/90 backdrop-blur-sm p-5 rounded-2xl border border-white/10 shadow-lg text-white">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
@@ -590,7 +570,6 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           
-          {/* Section Header */}
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
             <p className="text-primary font-bold text-xs uppercase tracking-widest">Memulai Bisnis Anda</p>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-dark">Premium Paket Kemitraan</h2>
@@ -599,9 +578,7 @@ export default function App() {
             </p>
           </div>
 
-          {/* Pricing cards grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-            
             {packages.map((pkg) => {
               const isPremium = pkg.id === "premium";
               return (
@@ -619,7 +596,6 @@ export default function App() {
                     </div>
                   )}
 
-                  {/* Header info */}
                   <div className="space-y-6">
                     <div>
                       <h3 className="font-serif text-2xl font-bold mb-1.5">{pkg.name}</h3>
@@ -628,10 +604,7 @@ export default function App() {
 
                     <hr className="border-accent/30" />
 
-                    {/* Features list */}
                     <div className="space-y-4">
-                      
-                      {/* Item */}
                       <div className="flex gap-3 items-start">
                         <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                           <Check className="w-3 h-3 text-primary" />
@@ -642,7 +615,6 @@ export default function App() {
                         </div>
                       </div>
 
-                      {/* Consultation */}
                       <div className="flex gap-3 items-start">
                         <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                           <Check className="w-3 h-3 text-primary" />
@@ -653,12 +625,28 @@ export default function App() {
                         </div>
                       </div>
 
+                      <div className="flex gap-3 items-start">
+                        <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                          <Check className="w-3 h-3 text-primary" />
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold text-dark/90">Bonus Pendukung</p>
+                          <p className="text-xs text-dark/75 mt-0.5">{pkg.guide}</p>
+                        </div>
+                      </div>
 
-
+                      <div className="flex gap-3 items-start">
+                        <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                          <Check className="w-3 h-3 text-primary" />
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold text-dark/90">Akses Group</p>
+                          <p className="text-xs text-dark/75 mt-0.5">{pkg.group}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {/* CTA button inside Card */}
                   <div className="pt-8">
                     <button 
                       onClick={() => setActivePackage(pkg)}
@@ -672,434 +660,203 @@ export default function App() {
                       Saya Tertarik
                     </button>
                   </div>
-
                 </div>
               );
             })}
-
-          </div>
-
-          {/* Guarantee seal text */}
-          <div className="mt-16 text-center text-xs text-dark/60 italic">
-            * Seluruh transaksi kemitraan akan dipandu langsung oleh tim advisor profesional Its.Threedi melalui jalur aman WhatsApp resmi.
           </div>
 
         </div>
       </section>
 
-      {/* --- SECTION 5 — FOOTER / LOCATION --- */}
-      <footer 
-        id="location-section"
-        className="bg-dark text-brand-bg pt-20 pb-12 relative overflow-hidden"
-      >
-        {/* Background Visual Accents */}
-        <div className="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-full filter blur-2xl -z-10"></div>
-        
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pb-16 border-b border-white/10">
-          
-          {/* Column 1: Brand details */}
-          <div className="lg:col-span-4 space-y-6">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-dark font-serif font-bold text-sm tracking-wider">
-                3
-              </div>
-              <span className="font-serif font-semibold text-xl md:text-2xl tracking-tight text-white">
-                Its.<span className="text-accent italic font-medium font-serif">Threedi</span>
-              </span>
-            </div>
-            
-            <p className="text-xs text-brand-bg/75 leading-relaxed font-light">
-              Penyedia busana terkurasi berkualitas internasional serta partner strategis kemitraan bisnis thrifting terpercaya di Jakarta Selatan.
+      {/* --- LOKASI / ADDRESS SECTION --- */}
+      <section id="location-section" className="py-24 max-w-7xl mx-auto px-6 md:px-12 border-t border-accent/20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <p className="text-primary font-bold text-xs uppercase tracking-widest">Kunjungi Store Fisik</p>
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-dark">Mari Bertemu Langsung.</h2>
+            <p className="text-dark/80 font-light leading-relaxed">
+              Ingin melihat dan memilih pakaian secara manual? Kami menyambut hangat kehadiran Anda di store fisik kami yang berlokasi di Jagakarsa, Jakarta Selatan.
             </p>
-            
-            <div className="flex gap-4">
-              {/* Instagram link */}
-              <a 
-                href="https://instagram.com/its.threedi" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-brand-bg hover:bg-white hover:text-dark transition-all"
-                aria-label="Instagram Page"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-
-              {/* TikTok link */}
-              <a 
-                href="https://tiktok.com/@its.threedi" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-brand-bg hover:bg-white hover:text-dark transition-all font-serif font-bold text-xs"
-                aria-label="TikTok Page"
-              >
-                TK
-              </a>
-
-              {/* WhatsApp link */}
-              <a 
-                href="https://wa.me/6281387875740" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-9 h-9 roundsenied-full bg-white/5 border border-white/10 flex items-center justify-center text-brand-bg hover:bg-white hover:text-dark transition-all"
-                aria-label="WhatsApp"
-              >
-                <Smartphone className="w-4 h-4" />
-              </a>
+            <div className="space-y-3 pt-2">
+              <p className="flex items-start gap-3 text-sm text-dark/80">
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span>Jl. Jagakarsa Raya, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta.</span>
+              </p>
+              <p className="flex items-center gap-3 text-sm text-dark/80">
+                <Clock className="w-5 h-5 text-primary shrink-0" />
+                <span>Buka Setiap Hari: 10.00 - 21.00 WIB</span>
+              </p>
             </div>
-          </div>
-
-          {/* Column 2: Alamat fisik (Address) */}
-          <div className="lg:col-span-4 space-y-4">
-            <h4 className="text-xs font-bold uppercase tracking-widest text-accent">Alamat Store Fisik</h4>
-            <div className="text-xs text-brand-bg/80 space-y-2 font-light leading-relaxed">
-              <p className="font-bold text-white text-sm">Its.Threedi Flagship Store</p>
-              <p>Jl. Guru Muhyin RT04/02 No.73</p>
-              <p>Kel. Lenteng Agung, Kec. Jagakarsa</p>
-              <p>Kota Jakarta Selatan, DKI Jakarta 12610</p>
-            </div>
-          </div>
-
-          {/* Column 3: Interactive Location Button & Maps */}
-          <div className="lg:col-span-4 space-y-6">
-            <h4 className="text-xs font-bold uppercase tracking-widest text-accent">Navigasi Petunjuk</h4>
-            <p className="text-xs text-brand-bg/75 leading-relaxed font-light">
-              Ingin langsung melihat proses sortir atau membeli satuan langsung di outlet? Gunakan penunjuk Google Maps resmi kami.
-            </p>
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
-              <button 
-                onClick={() => setShowMapsModal(true)}
-                className="flex items-center justify-center gap-2.5 px-6 py-3 bg-white/5 border border-white/10 text-brand-bg hover:bg-white/15 rounded-xl font-medium text-xs tracking-wider uppercase transition-all"
-              >
-                <Map className="w-4 h-4 text-accent" />
-                Intip Peta Satelit
-              </button>
-              
+            <div className="pt-4">
               <button 
                 onClick={openDirectMaps}
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-accent text-dark hover:bg-white rounded-xl font-bold text-xs tracking-wider uppercase transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg text-sm font-semibold hover:bg-dark transition-colors"
               >
-                <MapPin className="w-4 h-4 text-primary" />
-                Buka Google Maps
+                <Map className="w-4 h-4" /> Buka Google Maps
               </button>
             </div>
           </div>
-
-        </div>
-
-        {/* Brand Copyright */}
-        <div className="max-w-7xl mx-auto px-6 md:px-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-brand-bg/60 font-light">
-          <p>© 2026 Its.Threedi. Seluruh hak cipta dilindungi undang-undang.</p>
-          <div className="flex gap-6">
-            <span className="hover:text-accent cursor-pointer transition-colors">Syarat & Ketentuan</span>
-            <span className="hover:text-accent cursor-pointer transition-colors">Kebijakan Privasi</span>
-            <span className="hover:text-accent cursor-pointer transition-colors">Kemitraan Thrift</span>
+          <div className="w-full h-80 bg-accent/20 rounded-2xl overflow-hidden border border-accent/30 shadow-inner relative flex items-center justify-center">
+            <span className="text-sm font-light text-dark/60 italic">Interactive Maps Placeholder</span>
           </div>
         </div>
+      </section>
 
-      </footer>
-
-      {/* ================= MODAL DIALOGS (INTERACTIVE ACTIONS) ================= */}
-
-      {/* 1. WHATSAPP PACKAGE INQUIRY DRAWER / MODAL */}
+      {/* --- MODAL INTERAKTIF: WHATSAPP INQUIRY FORM --- */}
       <AnimatePresence>
         {activePackage && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-            
-            {/* Backdrop */}
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/40 backdrop-blur-sm">
             <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setActivePackage(null)}
-              className="absolute inset-0 bg-dark/70 backdrop-blur-sm"
-            ></motion.div>
-
-            {/* Modal Body */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="bg-[#FAF6F0] w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl border border-accent relative z-10"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white rounded-2xl p-6 md:p-8 max-w-md w-full shadow-2xl relative border border-accent/20"
             >
+              <button 
+                onClick={() => setActivePackage(null)}
+                className="absolute top-4 right-4 p-1 rounded-full hover:bg-accent/20 text-dark/60 hover:text-dark transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
               
-              {/* Header */}
-              <div className="bg-primary text-brand-bg p-6 flex justify-between items-center">
+              <h3 className="font-serif text-2xl font-bold mb-2">Formulir Kemitraan</h3>
+              <p className="text-sm text-dark/70 mb-6">Anda memilih <span className="font-bold text-primary">{activePackage.name}</span>. Silakan lengkapi data berikut:</p>
+              
+              <form onSubmit={handleWhatsAppSend} className="space-y-4">
                 <div>
-                  <span className="text-[9px] uppercase tracking-widest font-bold text-accent">Form Inkuiri Paket</span>
-                  <h3 className="font-serif text-xl font-bold mt-1">{activePackage.name}</h3>
+                  <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-dark/80">Nama Lengkap</label>
+                  <input 
+                    type="text" 
+                    required
+                    placeholder="Contoh: Budi Santoso"
+                    value={buyerName}
+                    onChange={(e) => setBuyerName(e.target.value)}
+                    className="w-full px-4 py-3 bg-brand-bg rounded-lg border border-accent/40 focus:outline-none focus:border-primary text-sm transition-colors"
+                  />
                 </div>
-                <button 
-                  onClick={() => setActivePackage(null)}
-                  className="p-1 rounded-full hover:bg-white/10 text-brand-bg"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-
-              {/* Form Content */}
-              <form onSubmit={handleWhatsAppSend} className="p-6 space-y-5">
-                
-                {/* Details display */}
-                <div className="bg-brand-bg p-4 rounded-xl border border-accent/40 text-xs space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-dark/60">Nama Paket:</span>
-                    <span className="font-bold text-primary">{activePackage.name}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-dark/60">Estimasi Investasi:</span>
-                    <span className="font-bold text-primary">{activePackage.price}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-dark/60">Dukungan:</span>
-                    <span className="font-light text-right">{activePackage.consultation}</span>
-                  </div>
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-dark/80">Kota Asal</label>
+                  <input 
+                    type="text" 
+                    required
+                    placeholder="Contoh: Jakarta Selatan"
+                    value={buyerCity}
+                    onChange={(e) => setBuyerCity(e.target.value)}
+                    className="w-full px-4 py-3 bg-brand-bg rounded-lg border border-accent/40 focus:outline-none focus:border-primary text-sm transition-colors"
+                  />
                 </div>
-
-                <div className="space-y-4">
-                  
-                  {/* Name field */}
-                  <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider text-dark/75 mb-1.5">Nama Lengkap</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Masukkan nama Anda"
-                      value={buyerName}
-                      onChange={(e) => setBuyerName(e.target.value)}
-                      className="w-full px-4 py-2.5 bg-white border border-accent rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-primary"
-                    />
-                  </div>
-
-                  {/* City field */}
-                  <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider text-dark/75 mb-1.5">Kota Asal</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Contoh: Jakarta Selatan, Surabaya, etc"
-                      value={buyerCity}
-                      onChange={(e) => setBuyerCity(e.target.value)}
-                      className="w-full px-4 py-2.5 bg-white border border-accent rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-primary"
-                    />
-                  </div>
-
-                  {/* Custom Message */}
-                  <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider text-dark/75 mb-1.5">Pesan Tambahan (Opsional)</label>
-                    <textarea 
-                      placeholder="Sebutkan jika ada pertanyaan khusus atau kategori pakaian yang diinginkan"
-                      value={buyerCustomText}
-                      onChange={(e) => setBuyerCustomText(e.target.value)}
-                      rows={3}
-                      className="w-full px-4 py-2.5 bg-white border border-accent rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-primary resize-none"
-                    ></textarea>
-                  </div>
-
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-dark/80">Pesan Tambahan (Opsional)</label>
+                  <textarea 
+                    placeholder="Ada pertanyaan khusus mengenai pengiriman atau isi paket?"
+                    value={buyerCustomText}
+                    onChange={(e) => setBuyerCustomText(e.target.value)}
+                    rows={3}
+                    className="w-full px-4 py-3 bg-brand-bg rounded-lg border border-accent/40 focus:outline-none focus:border-primary text-sm transition-colors resize-none"
+                  />
                 </div>
-
-                {/* Form CTA Action */}
                 <button 
                   type="submit"
-                  className="w-full py-3 bg-primary text-brand-bg rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-dark transition-colors flex items-center justify-center gap-2"
+                  className="w-full py-3.5 bg-primary text-white rounded-lg text-sm font-semibold tracking-wide hover:bg-dark transition-colors flex items-center justify-center gap-2 mt-2"
                 >
-                  <Send className="w-3.5 h-3.5" />
-                  Kirim ke WhatsApp Resmi
+                  <Send className="w-4 h-4" /> Kirim via WhatsApp
                 </button>
-
-                <p className="text-[10px] text-center text-dark/60 font-light">
-                  * Sistem kami otomatis menyusun draf pesan WhatsApp yang rapi dan terarah.
-                </p>
-
               </form>
-
             </motion.div>
-
           </div>
         )}
       </AnimatePresence>
 
-      {/* 2. TIKTOK LIVE SCHEDULE & ACTION MODAL */}
+      {/* --- MODAL INTERAKTIF: TIKTOK LIVE ROUTER --- */}
       <AnimatePresence>
         {showLiveModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-            
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/40 backdrop-blur-sm">
             <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setShowLiveModal(false)}
-              className="absolute inset-0 bg-dark/70 backdrop-blur-sm"
-            ></motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="bg-[#FAF6F0] w-full max-w-md rounded-2xl overflow-hidden shadow-2xl border border-accent relative z-10"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white rounded-2xl p-6 text-center max-w-sm w-full shadow-2xl relative border border-accent/20"
             >
-              
-              <div className="p-6 border-b border-accent/20 flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-                  <h3 className="font-serif text-lg font-bold">TikTok Live Streaming Room</h3>
-                </div>
+              <button 
+                onClick={() => setShowLiveModal(false)}
+                className="absolute top-4 right-4 p-1 rounded-full hover:bg-accent/20 text-dark/60 hover:text-dark transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <Video className="w-6 h-6 animate-pulse" />
+              </div>
+              <h3 className="font-serif text-xl font-bold mb-2">Menuju Live TikTok</h3>
+              <p className="text-sm text-dark/70 mb-6">Anda akan diarahkan ke profil resmi TikTok @its.threedi untuk bergabung dalam siaran langsung interaktif.</p>
+              <div className="flex gap-3">
                 <button 
                   onClick={() => setShowLiveModal(false)}
-                  className="p-1 rounded-full hover:bg-dark/10 text-dark"
+                  className="flex-1 py-2.5 border border-accent rounded-lg text-xs font-semibold uppercase hover:bg-brand-bg transition-colors"
                 >
-                  <X className="w-5 h-5" />
+                  Batal
                 </button>
+                <a 
+                  href="https://tiktok.com/@its.threedi" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 py-2.5 bg-primary text-white rounded-lg text-xs font-semibold uppercase tracking-wider text-center flex items-center justify-center gap-1 hover:bg-dark transition-colors"
+                >
+                  Buka TikTok <ExternalLink className="w-3.5 h-3.5" />
+                </a>
               </div>
-
-              <div className="p-6 space-y-6">
-                
-                <div className="text-center py-4 bg-brand-bg rounded-xl border border-accent/30 space-y-2">
-                  <Calendar className="w-8 h-8 text-primary mx-auto" />
-                  <p className="font-serif text-sm font-bold">Jadwal Siaran Live Mingguan</p>
-                  <p className="text-xs text-dark/70">Senin - Sabtu | Pukul 16.00 WIB - Selesai</p>
-                </div>
-
-                <div className="space-y-3.5">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-dark/75">Ketentuan Berbelanja Live:</h4>
-                  
-                  <div className="flex gap-2.5 items-start text-xs">
-                    <span className="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 text-[10px] font-bold">1</span>
-                    <p className="text-dark/80 pt-0.5">Penonton yang mengetik kode klaim tercepat di layar host berhak mendapatkan barang.</p>
-                  </div>
-
-                  <div className="flex gap-2.5 items-start text-xs">
-                    <span className="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 text-[10px] font-bold">2</span>
-                    <p className="text-dark/80 pt-0.5">Segera ambil tangkapan layar (screenshot) sebagai bukti klaim yang sah.</p>
-                  </div>
-
-                  <div className="flex gap-2.5 items-start text-xs">
-                    <span className="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 text-[10px] font-bold">3</span>
-                    <p className="text-dark/80 pt-0.5">Lakukan konfirmasi ke WhatsApp admin maksimal 1x24 jam setelah sesi live usai.</p>
-                  </div>
-                </div>
-
-                <div className="space-y-2.5 pt-2">
-                  <a 
-                    href="https://tiktok.com/@its.threedi" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-full py-3.5 bg-primary text-brand-bg rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-dark transition-colors flex items-center justify-center gap-2 shadow-sm"
-                  >
-                    <Video className="w-4 h-4 animate-pulse" />
-                    Hubungkan ke TikTok Live
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-
-                  <button 
-                    onClick={() => setShowLiveModal(false)}
-                    className="w-full py-3 bg-white text-dark border border-accent rounded-xl font-medium text-xs uppercase tracking-widest hover:bg-brand-bg transition-colors"
-                  >
-                    Nanti Saja
-                  </button>
-                </div>
-
-              </div>
-
             </motion.div>
-
           </div>
         )}
       </AnimatePresence>
 
-      {/* 3. GOOGLE MAPS DETAILED MODAL */}
+      {/* --- MODAL INTERAKTIF: MAPS LOCATION DIALOG --- */}
       <AnimatePresence>
         {showMapsModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-            
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark/40 backdrop-blur-sm">
             <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setShowMapsModal(false)}
-              className="absolute inset-0 bg-dark/70 backdrop-blur-sm"
-            ></motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="bg-[#FAF6F0] w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl border border-accent relative z-10"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white rounded-2xl p-6 text-center max-w-sm w-full shadow-2xl relative border border-accent/20"
             >
-              
-              <div className="p-6 border-b border-accent/20 flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  <h3 className="font-serif text-lg font-bold">Navigasi Peta Flagship Store</h3>
-                </div>
+              <button 
+                onClick={() => setShowMapsModal(false)}
+                className="absolute top-4 right-4 p-1 rounded-full hover:bg-accent/20 text-dark/60 hover:text-dark transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-6 h-6" />
+              </div>
+              <h3 className="font-serif text-xl font-bold mb-2">Petunjuk Arah Store</h3>
+              <p className="text-sm text-dark/70 mb-6">Buka Google Maps untuk melihat lokasi rute perjalanan presisi menuju store Its.Threedi di Jagakarsa.</p>
+              <div className="flex gap-3">
                 <button 
                   onClick={() => setShowMapsModal(false)}
-                  className="p-1 rounded-full hover:bg-dark/10 text-dark"
+                  className="flex-1 py-2.5 border border-accent rounded-lg text-xs font-semibold uppercase hover:bg-brand-bg transition-colors"
                 >
-                  <X className="w-5 h-5" />
+                  Kembali
+                </button>
+                <button 
+                  onClick={() => {
+                    setShowMapsModal(false);
+                    openDirectMaps();
+                  }}
+                  className="flex-1 py-2.5 bg-primary text-white rounded-lg text-xs font-semibold uppercase tracking-wider text-center flex items-center justify-center gap-1 hover:bg-dark transition-colors"
+                >
+                  Buka Maps <ExternalLink className="w-3.5 h-3.5" />
                 </button>
               </div>
-
-              <div className="p-6 space-y-6">
-                
-                {/* Simulated Interactive Map iframe / styled block */}
-                <div className="w-full h-72 rounded-xl bg-accent-dark/20 border border-accent/50 relative overflow-hidden shadow-inner flex items-center justify-center">
-                  {/* Styled simulated map */}
-                  <div className="absolute inset-0 bg-[#E8D8C8] opacity-80 flex flex-col justify-between p-6">
-                    {/* Simulated map graphic accents */}
-                    <div className="w-full h-1.5 bg-white/60 absolute top-1/3 left-0 transform -rotate-12"></div>
-                    <div className="w-full h-2 bg-white/60 absolute top-2/3 left-0 transform rotate-6"></div>
-                    <div className="w-2.5 h-full bg-white/60 absolute left-1/3 top-0 transform rotate-12"></div>
-                    
-                    {/* Location Pin */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-xl animate-bounce">
-                        <MapPin className="w-5 h-5" />
-                      </div>
-                      <div className="bg-[#FAF6F0] text-[10px] font-bold text-dark px-2 py-0.5 rounded shadow mt-1 border border-accent whitespace-nowrap">
-                        Its.Threedi Flagship
-                      </div>
-                    </div>
-
-                    <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-3.5 rounded-lg border border-accent/30 text-[10px] text-dark/80 space-y-1">
-                      <p className="font-bold">Jagakarsa, Jakarta Selatan</p>
-                      <p className="font-light">Jl. Guru Muhyin RT04/02 No.73, Lenteng Agung</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="text-xs space-y-1.5 leading-relaxed font-light">
-                    <p className="font-semibold text-sm">Informasi Penting Kunjungan Offline:</p>
-                    <p>• Toko fisik buka setiap hari mulai pukul 10.00 WIB hingga 21.00 WIB.</p>
-                    <p>• Tersedia lahan parkir aman untuk kendaraan roda dua maupun roda empat.</p>
-                    <p>• Calon mitra yang ingin menyortir barang kemitraan mandiri wajib membuat janji terlebih dahulu.</p>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <button 
-                      onClick={openDirectMaps}
-                      className="flex-1 py-3.5 bg-primary text-brand-bg rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-dark transition-colors flex items-center justify-center gap-2 shadow-sm"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" />
-                      Navigasi Google Maps Resmi
-                    </button>
-
-                    <button 
-                      onClick={() => setShowMapsModal(false)}
-                      className="flex-1 py-3 bg-white text-dark border border-accent rounded-xl font-medium text-xs uppercase tracking-widest hover:bg-brand-bg transition-colors"
-                    >
-                      Tutup Penunjuk
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-
             </motion.div>
-
           </div>
         )}
       </AnimatePresence>
+
+      {/* --- FOOTER DEKORATIF --- */}
+      <footer className="py-12 bg-brand-bg text-center text-dark/60 border-t border-accent/20 mt-12">
+        <p className="font-serif font-bold text-sm tracking-wide mb-2 text-dark">Its.Threedi</p>
+        <p className="text-xs">&copy; {new Date().getFullYear()} Its.Threedi Store Jakarta. All rights reserved.</p>
+      </footer>
 
     </div>
   );
