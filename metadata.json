@@ -1,0 +1,6 @@
+{
+  "name": "Its.Threedi",
+  "description": "Premium landing page for Its.Threedi - Thrift Store & Business Partner",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
